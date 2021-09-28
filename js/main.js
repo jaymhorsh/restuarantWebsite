@@ -85,8 +85,6 @@ const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "bx-moon" : "bx-sun";
-
-// if the current selectedTheme is dark activated else deactived
 if (selectedTheme) {
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
@@ -107,7 +105,6 @@ themeButton.addEventListener("click", () => {
 });
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
-// you need internet for the ScrollReveal to work
 const sr = ScrollReveal({
   origin: "top",
   distance: "30px",
